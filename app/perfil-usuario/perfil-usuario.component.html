@@ -1,0 +1,44 @@
+<div id="todo" class="container">
+    <div class="row mt-5">
+      <div class="col-md-4">
+        <div class="card mb-3">
+          <div class="card-body text-center">
+            <img id="imagen-perfil" src="assets/Jose-cabanillas.jpg" width="100" class="img-fluid rounded-circle mb-3">
+            <button id="cambiar-imagen" class="btn btn-primary mb-3">Cambiar imagen</button>
+            <form id="form-datos-personales">
+              <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombre" name="nombre" value="Juan">
+              </div>
+              <div class="mb-3">
+                <label for="apellidos" class="form-label">Apellidos</label>
+                <input type="text" class="form-control" id="apellidos" name="apellidos" value="Pérez García">
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" name="email" value="juan.perez@example.com">
+              </div>
+              <button type="submit" class="btn btn-primary">Guardar cambios</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <script>
+    const themeStyle = document.getElementById('theme-style');
+    const toggleThemeBtn = document.getElementById('toggle-theme-btn');
+  
+    toggleThemeBtn.addEventListener('click', () => {
+      if (themeStyle.href.includes('tema-claro')) {
+        themeStyle.href = 'tema-oscuro.css';
+      } else {
+        themeStyle.href = 'tema-claro.css';
+      }
+    });
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script src="perfilusuario.js"></script>
