@@ -7,6 +7,9 @@ import { InicioUsuarioComponent } from './inicio-usuario/inicio-usuario.componen
 import { NotificacionesComponent } from './notificaciones/notificaciones.component';
 import { AppRoutingModule } from './app-routing.module';
 import { LoginComponent } from './login/login.component';
+import { MessagesComponent } from './messages/messages.component';
+import { UsuariosComponent } from './usuarios/usuarios.component';
+import { UsuarioComponent } from './usuario/usuario.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +17,10 @@ import { LoginComponent } from './login/login.component';
     PerfilUsuarioComponent,
     InicioUsuarioComponent,
     NotificacionesComponent,
-    LoginComponent
+    LoginComponent,
+    MessagesComponent,
+    UsuariosComponent,
+    UsuarioComponent
   ],
   imports: [
     BrowserModule,
