@@ -1,0 +1,37 @@
+<div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="card">
+          <img src="ruta_de_la_imagen" alt="Foto del Alumno" class="card-img-top">
+          <div class="card-body">
+            <h1 class="card-title">Bruno Cicerone</h1>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="card">
+          <div class="card-body">
+            <h2 class="card-title">Asignaturas y Notas</h2>
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>Asignatura</th>
+                  <th>Nota</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let asignatura of asignaturas">
+                  <td>{{ asignatura.nombre_asignatura }}</td>
+                  <td>{{ asignatura.nota }}</td>
+                </tr>
+                <tr *ngIf="asignaturas.length === 0">
+                  <td colspan="2">No hay asignaturas disponibles.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
