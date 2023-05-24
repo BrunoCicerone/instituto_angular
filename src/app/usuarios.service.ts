@@ -15,7 +15,7 @@ export class UsuariosService implements InMemoryDbService {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' })
   };
 
-  private usuariosUrl = 'api/usuariosDb';  // URL to web api
+  private usuariosUrl = 'http://localhost:8080/api/persons';  // URL a eclipse
 
   constructor(
     private http: HttpClient,
